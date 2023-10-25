@@ -285,7 +285,7 @@ const BlogDetails = ({
               </p>
             </div>
             <div className="border-r-2 px-3 border-r-brand_text">
-              <p>{data.created_by.name}</p>
+              <p>{data.created_by?.name}</p>
             </div>
             <div className="hidden xl:block border-r-2 px-3 border-r-brand_text">
               <p>{data.category.name}</p>
