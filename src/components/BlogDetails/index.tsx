@@ -261,7 +261,7 @@ const BlogDetails = ({
 
   return (
     <div className=" ">
-      <div className="h-[20vh] bg-brand_bggray pb-16 pt-16 text-center ">
+      <div className="h-auto bg-brand_bggray pb-16 pt-16 text-center ">
         <div className="text-[11px] uppercase">
           <Breadcrumbs />
         </div>
