@@ -261,12 +261,12 @@ const Blog = () => {
                     key={item._id}
                     className="flex py-2 items-center space-x-1"
                   >
-                    <p className="text-[10px] text-brand_text">
+                    <p className="text-[10px] text-black">
                       {">"}
                       {truncateText(item.name,5)} on
                     </p>
                     <Link shallow href={`/all-blogs/${item.blog?.slug}`}>
-                      <p className="text-sm">{truncateText(item.blog?.title,20)}</p>
+                      <p className="text-sm text-brand_secondary">{truncateText(item.blog?.title,20)}</p>
                     </Link>
                   </div>
                 ))}
@@ -275,14 +275,14 @@ const Blog = () => {
           <div className="py-6  ">
             <p className="text-md font-semibold">Categories</p>
             <div className="py-4">
-              <ul className="list-disc pl-8 cursor-pointer  text-sm text-brand_text ">
+              <ul className="list-disc pl-8 cursor-pointer  text-sm text-brand_headings ">
                 {categories &&
                   categories.length > 0 &&
                   categories.map((item: any) => (
                     <li
                       key={item._id}
                       onClick={() => item._id && fetchAllBlogs(item._id)}
-                      className="py-1 hover:text-brand_darkgray"
+                      className="py-1 "
                     >
                       {item.name}
                     </li>
